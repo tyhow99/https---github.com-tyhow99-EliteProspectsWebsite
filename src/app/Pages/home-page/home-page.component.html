@@ -1,0 +1,19 @@
+<div class = "sidebar1">
+    <div class = "sidebar1top" style="color: white;">Trending Players</div>
+    <div *ngFor="let item of sidebar">
+        <app-side-bar name = {{item.name}} name2 = {{item.name2}}></app-side-bar>
+    </div>
+</div>
+<div class = "grid1">
+    <div class = "gridTitle">
+        Recent Transfers
+    </div>
+        <div id="grid-col">
+            <div class="cell">Date</div><div class="cell">Player</div>
+            <div class="cell">From</div><div class="cell">To</div>
+    </div>
+    <div *ngFor="let item2 of transferGrid">
+        <app-grid Date = {{item2.Date}} Player = {{item2.Player}} Team1 = {{item2.Team1}} Team2 = {{item2.Team2}}></app-grid>
+    </div>
+</div>
+<router-outlet></router-outlet>

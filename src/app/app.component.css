@@ -1,0 +1,14 @@
+.container{
+    position: fixed;
+    left: 500px;
+    background-color: black;
+}
+.gridtop{
+    background-color: #063950;
+    color: white;
+    height: 30px;
+    text-align: left;
+    text-align: middle;
+    padding-top: 15px;
+    width: 172px;
+}

@@ -1,0 +1,63 @@
+.container1{
+position: fixed;
+left: 400px;
+top:250px;
+color: black;
+}
+.container{
+    position: fixed;
+    left: 500px;
+    background-color: black;
+}
+.gridtop{
+    background-color: #063950;
+    color: white;
+    height: 30px;
+    text-align: left;
+    text-align: middle;
+    padding-top: 15px;
+    width: 172px;
+}
+.sidebar1{
+    position: fixed;
+    left: 0px;
+    top: 250px;
+    background-color: #063950;
+    color: black;
+}
+.grid1{
+    position: fixed;
+    left: 360px;
+    top: 250px;
+    background-color: #063950;
+    color: black;
+}
+.gridTitle{
+    color: white;
+}
+
+/* (A) CONTAINER */
+#grid-col {
+    /* (A1) GRID LAYOUT */
+    display: grid;
+    /* (A2) SPECIFY COLUMNS */
+    grid-template-columns: auto auto auto auto;
+    /* we can also specify exact pixels, percentage, repeat
+    grid-template-columns: 50px 100px 150px;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 100px 20% auto;
+    grid-template-columns: repeat(3, auto); */
+  }
+   
+  /* (B) GRID CELLS */
+  div.cell {
+    background: rgb(241, 25, 25);
+    border: 1px solid rgb(241, 25, 25);
+    padding: 10px;
+    width: 150px;
+    height: 13px;
+    text-size-adjust: auto;
+    text-align: left;
+    margin-left: 0px;
+    color:white;
+  }

@@ -1,0 +1,49 @@
+h2{ 
+    height: fit-content;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background: #042e41 ; 
+    font-size: 20px; 
+} 
+form{ 
+    text-align: center; 
+} 
+p{
+    position: fixed;
+    top: 18px;
+    vertical-align: auto;
+    text-align: center;
+    width: 1000px;
+}
+h4{
+    position: fixed;
+    top: -20px;
+    right: 9px;
+    max-height: fit-content;
+    background-color: #063950;
+    width: 1265px;
+    text-align: right;
+}
+h1{ 
+  
+    font-size: 20px; 
+    width: auto; 
+    min-height: 80px; 
+    max-height: 150px; 
+    background:#063950;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white; 
+    text-align: right;
+} 
+.signIn{
+    position: fixed;
+    top: 30px;
+    right: 150px;
+}
+h3{
+    background-color: rgb(216, 216, 216);
+}
