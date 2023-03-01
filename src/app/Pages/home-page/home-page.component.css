@@ -1,5 +1,5 @@
 .container1{
-position: fixed;
+position: relative;
 left: 400px;
 top:250px;
 color: black;
@@ -19,16 +19,22 @@ color: black;
     width: 172px;
 }
 .sidebar1{
-    position: fixed;
+    position: relative;
     left: 0px;
     top: 250px;
-    background-color: #063950;
     color: black;
 }
+.sidebar1{
+    position: relative;
+    top:0px;
+    background-color: #063950;
+    width: fit-content;
+}
 .grid1{
-    position: fixed;
+    position: relative;
     left: 360px;
     top: 250px;
+    width: fit-content;
     background-color: #063950;
     color: black;
 }

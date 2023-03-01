@@ -1,5 +1,20 @@
+h1{ 
+    position: relative;
+    font-size: 20px; 
+    width: auto;  
+    height: 20px;
+    background:#063950;
+    margin-top: 0px; 
+    margin-bottom: .5px; 
+    margin-left: 0px;
+    margin-right: 0px;
+    color: rgb(180, 180, 180); 
+    text-align: right;
+} 
 h2{ 
-    height: fit-content;
+    position: relative;
+    top:0px;
+    height: 80px;
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
@@ -10,40 +25,32 @@ form{
     text-align: center; 
 } 
 p{
-    position: fixed;
-    top: 18px;
+    height: fit-content;
+    position: relative;
+    top: -60px;
+    left: -100px;
     vertical-align: auto;
     text-align: center;
-    width: 1000px;
 }
 h4{
-    position: fixed;
-    top: -20px;
+    position: relative;
+    top: 0px;
     right: 9px;
     max-height: fit-content;
     background-color: #063950;
     width: 1265px;
     text-align: right;
 }
-h1{ 
-  
-    font-size: 20px; 
-    width: auto; 
-    min-height: 80px; 
-    max-height: 150px; 
-    background:#063950;
-    margin-top: 0px; 
-    margin-bottom: 0px; 
-    margin-left: 0px;
-    margin-right: 0px;
-    color: white; 
-    text-align: right;
-} 
 .signIn{
-    position: fixed;
-    top: 30px;
-    right: 150px;
+    height: fit-content;
+    position: relative;
+    top: -80px;
+    left: 1000px
+   
 }
 h3{
+    position: relative;
+    top: -70px;
+    margin-top: 0px;
     background-color: rgb(216, 216, 216);
 }
