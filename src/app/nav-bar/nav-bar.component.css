@@ -18,12 +18,19 @@ h2{
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
-    background: #042e41 ; 
+    background: #063950; 
     font-size: 20px; 
 } 
 form{ 
+    position: relative;
+    top: -86px;
+    margin-top: 0px;
     text-align: center; 
+    background-color: grey;
+    height: 100px;
+    text-align: center;
 } 
+
 p{
     height: fit-content;
     position: relative;
@@ -32,14 +39,15 @@ p{
     vertical-align: auto;
     text-align: center;
 }
-h4{
+h3{
     position: relative;
-    top: 0px;
-    right: 9px;
-    max-height: fit-content;
-    background-color: #063950;
-    width: 1265px;
-    text-align: right;
+    top: -67px;
+    right: -1px;
+    margin-top: 0px;
+    height: 92px;
+    background-color: #042e41;
+    width: 1246px;
+    text-align: left;
 }
 .signIn{
     height: fit-content;
@@ -48,9 +56,9 @@ h4{
     left: 1000px
    
 }
-h3{
+h4{
     position: relative;
-    top: -70px;
+    top: px;
     margin-top: 0px;
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(78, 77, 77);
 }
