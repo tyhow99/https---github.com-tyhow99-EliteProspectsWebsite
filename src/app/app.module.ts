@@ -54,7 +54,8 @@ import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
     RankingPortalComponent,
     MyRosterComponent,
     ContactEPComponent,
-    FreeAgentsComponent
+    FreeAgentsComponent,
+
   ],
   imports: [
     BrowserModule,
