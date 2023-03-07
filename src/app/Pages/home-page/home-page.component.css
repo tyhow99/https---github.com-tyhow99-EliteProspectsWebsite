@@ -41,8 +41,6 @@ color: black;
 .gridTitle{
     color: white;
 }
-
-/* (A) CONTAINER */
 #grid-col {
     /* (A1) GRID LAYOUT */
     display: grid;
@@ -54,8 +52,6 @@ color: black;
     grid-template-columns: 100px 20% auto;
     grid-template-columns: repeat(3, auto); */
   }
-   
-  /* (B) GRID CELLS */
   div.cell {
     background: rgb(241, 25, 25);
     border: 1px solid rgb(241, 25, 25);
@@ -66,4 +62,11 @@ color: black;
     text-align: left;
     margin-left: 0px;
     color:white;
+  }
+  .teamBarTop{
+    background-color:#063950;
+    width:fit-content;
+    height: 34px;
+    vertical-align: middle;
+    color: white;
   }

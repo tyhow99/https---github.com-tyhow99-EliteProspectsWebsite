@@ -27,6 +27,7 @@ import { RankingPortalComponent } from './Pages/ranking-portal/ranking-portal.co
 import { MyRosterComponent } from './Pages/my-roster/my-roster.component';
 import { ContactEPComponent } from './Pages/contact-ep/contact-ep.component';
 import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
+import { TeamSideBarComponent } from './team-side-bar/team-side-bar.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
     MyRosterComponent,
     ContactEPComponent,
     FreeAgentsComponent,
+    TeamSideBarComponent,
 
   ],
   imports: [

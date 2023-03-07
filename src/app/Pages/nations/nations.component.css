@@ -1,12 +1,35 @@
 .sidebar1{
     position: relative;
-    left: 0px;
-    top: 250px;
-    color: black;
-}
-.sidebar1{
-    position: relative;
-    top:0px;
+    top:200px;
     background-color: #063950;
     width: fit-content;
+}
+.nationsContainer{
+    position: relative;
+    top:-100px;
+    left: 0px;
+    align-items: center;
+    color: black;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-left: white;
+    border-right: white;
+    width: 1256;
+}
+ .column{
+    position: relative;
+    width: 800px;
+    left: 200px;
+    text-align: left;
+    float: left;    
+    width: 180px;
+    padding: 10px; 
+    height: fit-content;
+}
+.nationsContainer::after{
+    display: table;
+    clear: both;
+}
+p{
+    color: rgb(32, 32, 150);
 }
