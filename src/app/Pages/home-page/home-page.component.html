@@ -33,5 +33,14 @@
             </div>
         </div>
     </div>
+    <div class = "ECHLTeams">
+        <div class = "ECHLTop">
+            <p style="vertical-align: middle;">ECHL TEAMS</p>
+            <div *ngFor = "let item5 of tSideBar3" style="color:blue; position: relative; top: -420px">
+                <app-team-side-bar team1 = {{item5.team1}} team2 = {{item5.team2}}></app-team-side-bar>
+            </div>
+        </div>
+    </div>
 </div>
+
 <router-outlet></router-outlet>

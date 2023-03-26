@@ -73,3 +73,17 @@
     top: -380px;
     color: rgb(255, 255, 255);
   }
+  .ECHLTeams{
+    position: relative;
+    top: 820px;
+    background-color: #063950;
+    width: fit-content;
+    height: 34px;
+  }
+  .ECHLTop{
+    position: relative;
+    top:-325px;
+    width: 300px;
+    height: 34px;
+    color: white;
+  }
