@@ -63,5 +63,4 @@ export const NHL_List = [
         team1: "Montréal Canadiens",
         team2: "Winnipeg Jets"
     },
-    
 ]
