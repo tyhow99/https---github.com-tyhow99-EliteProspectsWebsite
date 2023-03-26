@@ -5,6 +5,7 @@ import { GridModel } from 'src/app/grid1/grid1Model';
 import { transferlist } from 'src/app/grid1/Transferlist';
 import { NHL_List } from 'src/app/team-side-bar/NHLTeamList';
 import { TeamSideBar } from 'src/app/team-side-bar/teamSideBarModel';
+import { AHL_List } from 'src/app/team-side-bar/AHLTeamList';
 @Component({
   selector: 'app-home-page',
   templateUrl: './home-page.component.html',
@@ -14,6 +15,7 @@ export class HomePageComponent {
   sidebar: SideBar [] = [];
   transferGrid: GridModel [] = [];
   tSideBar: TeamSideBar [] = [];
+  tSideBar2: TeamSideBar [] = [];
   constructor(){
     for(var item of mock_list){
       console.log(item);
@@ -28,6 +30,11 @@ export class HomePageComponent {
     {
       console.log(item3);
       this.tSideBar.push(item3);
+    }
+    for(var item4 of AHL_List)
+    {
+      console.log(item4);
+      this.tSideBar2.push(item4);
     }
   }
 }
