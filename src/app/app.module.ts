@@ -29,6 +29,7 @@ import { ContactEPComponent } from './Pages/contact-ep/contact-ep.component';
 import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
 import { TeamSideBarComponent } from './team-side-bar/team-side-bar.component';
 import { TesterComponent } from './tester/tester.component';
+import { LeagueTeamsComponent } from './league-teams/league-teams.component';
 
 @NgModule({
   declarations: [
@@ -59,6 +60,7 @@ import { TesterComponent } from './tester/tester.component';
     FreeAgentsComponent,
     TeamSideBarComponent,
     TesterComponent,
+    LeagueTeamsComponent,
 
   ],
   imports: [

@@ -1,0 +1,36 @@
+.LeagueTop{
+    width: 465px;
+}   
+.H1{
+    background-color: blue
+}
+.column{
+    position: relative;
+    left: 0px;
+    text-align: left;
+    float: left;    
+    width: 93px;
+    height: 30px;
+    font-size: 10px;
+}
+.LeagueContainer{
+    position: absolute;
+    top:400px;
+    left:30%;
+    height: fit-content;
+    border: 1px solid black;
+}
+.LeagueTop{
+    position: relative;
+    top: -45px;
+    height: 30px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+.LeagueTeams{
+    position: relative;
+    top:-50px;
+}
+
+
