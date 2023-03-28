@@ -1,0 +1,16 @@
+.LeagueTop{
+    background-color: blue;
+    width: 465px;
+}   
+.column{
+    position: relative;
+    left: 0px;
+    text-align: left;
+    float: left;    
+    width: 90px;
+    height: fit-content;
+    font-size: 10px;
+}
+
+
+

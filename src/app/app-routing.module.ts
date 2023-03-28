@@ -21,6 +21,7 @@ import { RankingPortalComponent } from './Pages/ranking-portal/ranking-portal.co
 import { MyRosterComponent } from './Pages/my-roster/my-roster.component';
 import { ContactEPComponent } from './Pages/contact-ep/contact-ep.component';
 import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
+import { TesterComponent } from './tester/tester.component';
 export const routes: Routes = [
   {
     path: '',
@@ -105,6 +106,10 @@ export const routes: Routes = [
   {
     path: 'TeamPage',
     component: TeamsComponent
+  },
+  {
+    path: 'TestPage',
+    component: TesterComponent
   }
 ];
 

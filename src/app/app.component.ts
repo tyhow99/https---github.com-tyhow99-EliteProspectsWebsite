@@ -34,4 +34,5 @@ for(var item4 of ECHL_List){
   this.echlSideBar.push(item4);
  }
 }
+
 }

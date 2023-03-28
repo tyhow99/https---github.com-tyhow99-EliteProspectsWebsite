@@ -28,6 +28,7 @@ import { MyRosterComponent } from './Pages/my-roster/my-roster.component';
 import { ContactEPComponent } from './Pages/contact-ep/contact-ep.component';
 import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
 import { TeamSideBarComponent } from './team-side-bar/team-side-bar.component';
+import { TesterComponent } from './tester/tester.component';
 
 @NgModule({
   declarations: [
@@ -57,6 +58,7 @@ import { TeamSideBarComponent } from './team-side-bar/team-side-bar.component';
     ContactEPComponent,
     FreeAgentsComponent,
     TeamSideBarComponent,
+    TesterComponent,
 
   ],
   imports: [
