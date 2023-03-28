@@ -33,6 +33,9 @@ import { LeagueTeamsComponent } from './league-teams/league-teams.component';
 import {HttpClientModule} from '@angular/common/http';
 import { UserInfoComponent } from './httpTest';
 import { BasicTableComponent } from './basic-table/basic-table.component';
+import { FooterComponent } from './footer/footer.component';
+import { PlayerLayoutComponent } from './player-layout/player-layout.component';
+import { TeamLayoutComponent } from './team-layout/team-layout.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,8 +67,10 @@ import { BasicTableComponent } from './basic-table/basic-table.component';
     TesterComponent,
     LeagueTeamsComponent,
     UserInfoComponent,
-    BasicTableComponent
-
+    BasicTableComponent,
+    FooterComponent,
+    PlayerLayoutComponent,
+    TeamLayoutComponent
   ],
   imports: [
     BrowserModule,

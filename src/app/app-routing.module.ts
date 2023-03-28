@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomePageComponent } from './Pages/home-page/home-page.component';
 import { SignInPageComponent } from './Pages/sign-in-page/sign-in-page.component';
@@ -22,6 +22,8 @@ import { MyRosterComponent } from './Pages/my-roster/my-roster.component';
 import { ContactEPComponent } from './Pages/contact-ep/contact-ep.component';
 import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
 import { TesterComponent } from './tester/tester.component';
+import { PlayerLayoutComponent } from './player-layout/player-layout.component';
+import { TeamLayoutComponent } from './team-layout/team-layout.component';
 export const routes: Routes = [
   {
     path: '',
@@ -110,6 +112,14 @@ export const routes: Routes = [
   {
     path: 'TestPage',
     component: TesterComponent
+  },
+  {
+    path: 'PlayerPage',
+    component: PlayerLayoutComponent
+  },
+  {
+    path: 'TeamPage',
+    component: TeamLayoutComponent
   }
 ];
 
