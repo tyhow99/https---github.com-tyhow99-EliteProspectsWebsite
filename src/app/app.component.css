@@ -12,3 +12,62 @@
     padding-top: 15px;
     width: 172px;
 }
+.sidebar1{
+    position: absolute;
+    background-color: #063950;
+    width: fit-content;
+    height: 100px;
+    padding-bottom: 15px;
+    vertical-align: text-top;
+}
+.NHLSideBarTop{
+   position: relative;
+   top: -17px;
+    background-color:#063950;
+    width:fit-content;
+    height: 34px;
+    vertical-align: middle;
+    color: white;
+}
+.NHLSideBar{
+    position: relative;
+    top: 300px;
+    border: 1px solid black;
+    width: fit-content;
+    height: 430px;
+    margin-top: 0px;
+}
+.AHLSideBar{
+    position: relative;
+    top: 330px;
+    border: 1px solid black;
+    width: fit-content;
+    height: 480px;
+    margin-top: 0px;
+}
+.AHLSideBarTop{
+    position: relative;
+    top: -17px;
+    background-color:#063950;
+    width:fit-content;
+    height: 34px;
+    vertical-align: middle;
+    color: white;
+ }
+ .ECHLSideBar{
+    position: relative;
+    top: 400px;
+    border: 1px solid black;
+    width: fit-content;
+    height: 390px;
+    margin-top: 0px;
+ }
+ .ECHLSideBarTop{
+    position: relative;
+    top: -17px;
+    background-color:#063950;
+    width:fit-content;
+    height: 34px;
+    vertical-align: middle;
+    color: white;
+ }

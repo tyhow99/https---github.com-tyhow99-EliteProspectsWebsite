@@ -1,10 +1,4 @@
 <div class = "body">
-    <div class = "sidebar1">
-        <div class = "sidebar1top" style="color: white;">Trending Players</div>
-        <div *ngFor="let item of sidebar">
-            <app-side-bar name = {{item.name}} name2 = {{item.name2}}></app-side-bar>
-        </div>
-    </div>
     <div class = "grid1">
         <div class = "gridTitle" style="width: fit-content;">
             Recent Transfers
@@ -17,30 +11,5 @@
             <app-grid Date = {{item2.Date}} Player = {{item2.Player}} Team1 = {{item2.Team1}} Team2 = {{item2.Team2}}></app-grid>
         </div>
     </div>
-    <div class = "teamSideBar">
-        <div class = "teamBarTop">
-            <p style="vertical-align: middle;">NHL TEAMS</p>
-            <div *ngFor = "let item3 of tSideBar" style="color:blue">
-                <app-team-side-bar team1 = {{item3.team1}} team2 = {{item3.team2}}></app-team-side-bar>
-            </div>
-        </div>
-    </div>
-    <div class = "AHLTeams">
-        <div class = "AHLTop">
-            <p style="vertical-align: middle;">AHL TEAMS</p>
-            <div *ngFor = "let item3 of tSideBar2" style="color:blue">
-                <app-team-side-bar team1 = {{item3.team1}} team2 = {{item3.team2}}></app-team-side-bar>
-            </div>
-        </div>
-    </div>
-    <div class = "ECHLTeams">
-        <div class = "ECHLTop">
-            <p style="vertical-align: middle;">ECHL TEAMS</p>
-            <div *ngFor = "let item5 of tSideBar3" style="color:blue; position: relative; top: -420px">
-                <app-team-side-bar team1 = {{item5.team1}} team2 = {{item5.team2}}></app-team-side-bar>
-            </div>
-        </div>
-    </div>
 </div>
-
 <router-outlet></router-outlet>
