@@ -30,7 +30,9 @@ import { FreeAgentsComponent } from './Pages/free-agents/free-agents.component';
 import { TeamSideBarComponent } from './team-side-bar/team-side-bar.component';
 import { TesterComponent } from './tester/tester.component';
 import { LeagueTeamsComponent } from './league-teams/league-teams.component';
-
+import {HttpClientModule} from '@angular/common/http';
+import { UserInfoComponent } from './httpTest';
+import { BasicTableComponent } from './basic-table/basic-table.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,11 +63,14 @@ import { LeagueTeamsComponent } from './league-teams/league-teams.component';
     TeamSideBarComponent,
     TesterComponent,
     LeagueTeamsComponent,
+    UserInfoComponent,
+    BasicTableComponent
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
