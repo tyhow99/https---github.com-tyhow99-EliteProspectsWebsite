@@ -59,10 +59,10 @@
     top: 400px;
     border: 1px solid black;
     width: fit-content;
-    height: 390px;
+    height: 480px;
     margin-top: 0px;
- }
- .ECHLSideBarTop{
+}
+.ECHLSideBarTop{
     position: relative;
     top: -17px;
     background-color:#063950;

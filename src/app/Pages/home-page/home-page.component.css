@@ -53,37 +53,3 @@
     margin-left: 0px;
     color:white;
   }
-  .teamBarTop{
-    background-color:#063950;
-    width:fit-content;
-    height: 34px;
-    vertical-align: middle;
-    color: white;
-  }
-  .AHLTeams{
-    position: relative;
-    top: 400px;
-    width:300px;
-    height: 34px;
-    background-color: #063950;
-    vertical-align: top;
-  }
-  .AHLTop{
-    position: relative;
-    top: -380px;
-    color: rgb(255, 255, 255);
-  }
-  .ECHLTeams{
-    position: relative;
-    top: 820px;
-    background-color: #063950;
-    width: fit-content;
-    height: 34px;
-  }
-  .ECHLTop{
-    position: relative;
-    top:-325px;
-    width: 300px;
-    height: 34px;
-    color: white;
-  }
