@@ -17,13 +17,35 @@
 }
 .playerBottom{
     position: relative;
-    top:-2px;
-    background-color: rgb(252, 252, 253);
+    top:-147px;
     height: 50px;
     border: 1px solid black;
     margin-top: 0px;
 }
-
+.sectionDropdown{
+    position: relative;
+    top: 5px;
+    background-color: #e4e7ef;
+    height: 50px;
+}
+.playerStat{
+    position: absolute;
+    left: 400px;
+    background-color:  #f7f9fc;
+    height: 200px;
+    width: 800px;
+}
+.dropbtn {
+    position: relative;
+    top:15px;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 10px;
+    text-align: center;
+  }
+  
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
     position: relative;
@@ -88,11 +110,12 @@
   }
   .fact1{
     position: relative;
+    top:-1px;
     left: 0px;
     width: 400px;
     background-color: white;
     margin: 0px;
-    height: fit-content;
+    height: 50px;
   }
   .fact1 p{
     position: relative;
@@ -115,11 +138,11 @@
   .fact2{
     position: relative;
     left: 400px;
-    top:-85px;
+    top:-51px;
     width: 400px;
     background-color: white;
     margin: 0px;
-    height: fit-content;
+    height: 0px;
   }
   .fact2 p{
     position: relative;
@@ -138,4 +161,15 @@
     top: -34px;
     text-align: right;
     padding-right: 10px;
+  }
+  .playerText{
+    position: relative;
+    color: white;
+    top: -140px;
+    left: 200px;
+    width: fit-content;
+  }
+  .playerText p{
+    padding: 10px;
+    font-size: 20px;
   }
