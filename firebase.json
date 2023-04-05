@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/elite-prospects-website",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
