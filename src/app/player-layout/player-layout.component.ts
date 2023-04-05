@@ -1,6 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { PlayerData } from './player-info.model';
+import { PlayerInfo } from './player-info.model';
 @Injectable(
 
 )
@@ -9,8 +9,9 @@ import { PlayerData } from './player-info.model';
   templateUrl: './player-layout.component.html',
   styleUrls: ['./player-layout.component.css']
 })
-export class PlayerLayoutComponent implements OnInit{
-  playerInfo: PlayerData | undefined;
+export class PlayerLayoutComponent implements OnInit
+{
+  playerInfo: PlayerInfo | undefined;
   ngOnInit(): void {
     console.log("I am here");
     this.getPlayerInfo();
@@ -21,12 +22,11 @@ export class PlayerLayoutComponent implements OnInit{
 
   }
   getPlayerInfo(){
-    return this.http.get<PlayerData>('https://eliteprospects-89f23-default-rtdb.firebaseio.com/Tyler%20Howcroft.json')
+    return this.http.get<PlayerInfo>('https://eliteprospects-89f23-default-rtdb.firebaseio.com/Tyler-Howcroft.json')
   }
   showUserInfo(){
     this.getPlayerInfo().subscribe(data =>{
       console.log(data)
-      console.log("I am here too")
       this.playerInfo = data;
     })
   }

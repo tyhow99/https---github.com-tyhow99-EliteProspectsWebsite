@@ -10,7 +10,7 @@
    </div>
 </div>
 <body>
-    <div class = "playerStat">
+    <div class = "playerFacts1">
         <div class = "sectionDropdown">
             <P style = "position: relative;top:17px;">GO TO SECTION</P>
             <div class="dropdown">
@@ -42,7 +42,8 @@
                     <p>Date of Birth</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.DOB}}</P>
                 </div>
             </div>
             <div class="fact2">
@@ -50,7 +51,8 @@
                     <p>Position</p>
                 </div>
                 <div class = "end">
-                    <p>test3</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Position}}</P>
                 </div>
             </div>
             <div class="fact1">
@@ -58,7 +60,8 @@
                     <p>Age</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Age}}</P>
                 </div>
             </div>
             <div class="fact2">
@@ -66,7 +69,8 @@
                     <p>Height</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Height}}</P>
                 </div>
             </div>
             <div class="fact1">
@@ -74,7 +78,8 @@
                     <p>Place of Birth</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.POB}}</P>
                 </div>
             </div>
             <div class="fact2">
@@ -82,7 +87,8 @@
                     <p>weight</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Weight}}</P>
                 </div>
             </div>
             <div class="fact1">
@@ -90,7 +96,8 @@
                     <p>nation</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Nation}}</P>
                 </div>
             </div>
             <div class="fact2">
@@ -98,7 +105,8 @@
                     <p>shoots</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Shoots}}</P>
                 </div>
             </div>
             <div class="fact1">
@@ -106,7 +114,8 @@
                     <p>Youth Team</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.YouthTeam}}</P>
                 </div>
             </div>
             <div class="fact2">
@@ -114,9 +123,75 @@
                     <p>Contract</p>
                 </div>
                 <div class = "end">
-                    <p>test2</p>
+                    <P *ngIf="playerInfo == undefined">Failed fetching user info</P>
+                    <P *ngIf="playerInfo != undefined"> {{playerInfo.Contract}}</P>
                 </div>
             </div>
         </tr>
+    </div>
+    <div class = "playerTeams">
+        <table>
+            <tr>
+                <th><div class = "default">Default</div></th>
+                <th><div class = "perGameAverage">Per Game Average</div></th>
+                <th><div class = "coachesPlayedFor">Coaches Played For</div></th>
+            </tr>
+        </table>
+        <div class="change">
+            <H1><P>Player Statistics</P></H1>
+            <div class = "changeDrop1">
+                <select name = "seasonDropDown" id = "dropdown" style="height: 50px; width: 350px;">
+                    <option value = "RegularAndPost">Regular Season + Post Season</option>
+                    <option value = "Regular">Regular Season</option>
+                    <option value = "Post">Post Season</option>
+                </select>
+            </div>
+            <div class = "changeDrop2">
+                <select name = "filterDropDown" id = "dropdown2" style="height: 50px; width: 350px;">
+                    <option value = "RegularAndPost">Filter League</option>
+                    <option value = "ACHA">ACHA</option>
+                    <option value = "USPHL]">USPHL</option>
+                    <option value = "USHS-PA">USHS-PA</option>
+                </select>
+            </div>
+        </div>
+        <div class = "statsTable">
+            <table>
+                <tr>
+                    <th>S</th>
+                    <th>Team</th>
+                    <th>League</th>
+                    <th>GP</th>
+                    <th>G</th>
+                    <th>A</th>
+                    <th>TP</th>
+                    <th>PIM</th>
+                    <th>+/-</th>
+                    <th>Post</th>
+                    <th>GP</th>
+                    <th>A</th>
+                    <th>TP</th>
+                    <th>PIM</th>
+                    <th>+/-</th>
+                </tr>
+                <tr *ngIf="playerInfo != undefined">
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>
+                        <th>test</th>  
+                        <th>test</th>
+                        <th>test</th>  
+                        <th>test</th>
+                        <th>test</th>  
+                        <th>test</th>  
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
