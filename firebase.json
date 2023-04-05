@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/elite-prospects-website",
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
