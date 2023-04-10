@@ -1,6 +1,6 @@
 
 <body>
-<div class = "container">
+    <div class = "about">
     <input id ="ch" type = "checkbox">
     <h1>About EP Player Tracker</h1>
     <p>The player tracker is a powerful tool that provides daily updates on your favorite players. 
@@ -17,18 +17,98 @@
             Europe Jr: Bulgaria, Czechia U17, Czechia U20, II-divisioona, U20 SM-sarja, U18 SM-sarja, U18 Mestis, Mestis (W), Naisten Liiga (W), DNL U20, Germany U17, Norway (W), MHL, Slovakia U20, Slovakia U18, J20 Nationell, J18 Nationell, J18 Region, U20-Elit, U20-Top, U17-Elit, SWHL A (W), SWHL B (W), Spengler Cup</p>
     </div>
     <label for = "ch">Read more</label>
-</div>
-<div class = "container2">
-    <ul>
+    </div>
+    <div class = "chooseLeague">
+        <ul>
         <li>
             <a href="#">Choose League ↓</a>
             <ul class = "dropdown">
-                <li>Listen</li><br>
-                <li>Listen</li><br>
-                <li>Listen</li><br>
+                <li>Bookmarked Players</li><br>
+                <li>Drafted 2021</li><br>
+                <li>Drafted 2022</li><br>
+                <li>Draft Eligible 2023</li><br>
+                <li>Draft Eligible 2024</li><br>
+                <li>Players Drafted by x</li><br>
+                <li>NHL Rights Belong to x</li><br>
+                <li>NHL</li><br>
+                <li>Hat Trick Scorers</li><br>
+                <li>5 points or More</li><br>
+                <li>40 Saves or More</li><br>
+                <li>30:00 TOI or More</li><br>
             </ul>
         </li>
-    </ul>
-</div>
+        </ul>
+        <div class = "chooseLeagueSearch">
+        <form id = "form"> 
+            <input type = "search" style="width: 800px; height: 50px; position: relative;top:25px" id = "query" name = "q" 
+            placeholder="Search Teams, Players, Leagues"> 
+            <button style="width: 90px;height: 50px;position: relative;top:25px;">Search</button> 
+    </form>
+        </div>
+    </div>
 </body>
+<div class="chooseLeagueDropDowns">
+    <div class="dropdown" style="position: relative; left: 15px;top: 25px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">All Positions</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>Goaltender</P>
+            <P>Skater</P>
+            <P>Defenseman</P>
+            <P>Forwards</P>
+            <P>C</P>
+            <P>LW</P>
+            <P>RW</P>
+        </div>
+    </div>
+    <div class="dropdown" style="position: relative; left: 45px;top: 25px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">All Teams</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>test</P>
+            <P>test</P>
+            <P>test</P>
+        </div>
+    </div>
+    <div class="dropdown" style="position: relative; left: 70px;top: 25px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">All Nationalities</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>test</P>
+            <P>test</P>
+            <P>test</P>
+        </div>
+    </div>
+    <div class="dropdown" style="position: relative; left: 100px;top: 25px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">All Ages</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>test</P>
+            <P>test</P>
+            <P>test</P>
+        </div>
+    </div>
+    <div class="dropdown" style="position: relative; left: 15px;top: 45px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">Drafted?</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>test</P>
+            <P>test</P>
+            <P>test</P>
+        </div>
+    </div>
+    <div class="dropdown"  style="position: relative; left: 45px;top: 45px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">Drafted By</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>test</P>
+            <P>test</P>
+            <P>test</P>
+        </div>
+    </div>
+    <div class="dropdown" style="position: relative; left: 70px;top: 45px;">
+        <button onclick="myFunction()" class="dropbtn" style="width: 190px;">NHL rights</button>
+        <div id="myDropdown" class="dropdown-content">
+            <P>test</P>
+            <P>test</P>
+            <P>test</P>
+        </div>
+    </div>
+    
+</div>
+
 <router-outlet></router-outlet>

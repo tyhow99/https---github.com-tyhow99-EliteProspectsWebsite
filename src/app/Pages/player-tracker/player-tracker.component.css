@@ -1,11 +1,13 @@
-.container{
+.about{
     position: relative;
-    left: 100px;
-    width: 1000px;
+    left: 550px;
+    width: fit-content;
     background-color: white;
     height: fit-content;
     border: 1px solid rgb(0, 0, 0);
- 
+}
+.about p{
+    width: 1000px;
 }
 body{
     display: flex;
@@ -55,7 +57,7 @@ ul li{
 ul li a{
     position: relative;
     right:39px;
-    width: 300px;
+    width: 800px;
     background: white;
     display: block;
     padding: 20px 25px;
@@ -69,7 +71,7 @@ ul li a{
 ul li ul.dropdown{
     position: relative;
     left:0;
-    width: 300px;
+    width:600px;
     background: white;
     position: absolute;
     z-index: 999;
@@ -78,12 +80,72 @@ ul li ul.dropdown{
 }
 ul li:hover ul.dropdown{
     display: block;
+    
 }
-.container2{
+.chooseLeague{
     align-items: center;
     position: relative;
     top:500px;
-    right: 500px;
+    right: 329px;
     background: grey;
+    width: 1000px;
+    height: 200px;
+}
+.dropbtn {
+    position: relative;
+    top:15px;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    height: 10px;
+    text-align: center;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    left: 695px;
+    top:-40px;
+    display: inline-block;
+    
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
     width: 800px;
+    right:0px;
+    top: 47.1px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  .chooseLeagueDropDowns{
+    position: absolute;
+    left: 360px;
+    top: 1350px;
+    background-color: grey;
+    width: 890px;
+    height: 150px;
+    color: black;
+  }
+.dropdown-content{
+    width: 190px;
 }
