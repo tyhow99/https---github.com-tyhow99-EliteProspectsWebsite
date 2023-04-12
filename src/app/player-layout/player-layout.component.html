@@ -157,6 +157,7 @@
         </div>
         <div class = "statsTable">
             <table>
+                <!-- The column titles-->
                 <tr>
                     <th>S</th>
                     <th>Team</th>
@@ -174,22 +175,15 @@
                     <th>PIM</th>
                     <th>+/-</th>
                 </tr>
+                 <!-- The column values-->
                 <tr *ngIf="playerInfo != undefined">
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>
-                        <th>test</th>  
-                        <th>test</th>
-                        <th>test</th>  
-                        <th>test</th>
-                        <th>test</th>  
-                        <th>test</th>  
+                    <p>test</p>
+                    <div *ngFor="let year of playerInfo.Year">
+                        <div *ngFor="let facts of year.Team">
+                            <th>{{facts}}</th>
+                            <th>test</th>
+                        </div>
+                    </div>
                 </tr>
             </table>
         </div>

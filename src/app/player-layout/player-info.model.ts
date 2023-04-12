@@ -1,3 +1,5 @@
+import { Year } from "./Year-list";
+
 export interface PlayerInfo{
     Age: string;
     DOB: string;
@@ -9,4 +11,5 @@ export interface PlayerInfo{
     YouthTeam: string;
     Height: string;
     Nation: string;
+    Year: Year[];
 }
