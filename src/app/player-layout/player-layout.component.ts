@@ -22,12 +22,26 @@ export class PlayerLayoutComponent implements OnInit
 
   }
   getPlayerInfo(){
-    return this.http.get<PlayerInfo>('https://eliteprospects-89f23-default-rtdb.firebaseio.com/Tyler-Howcroft.json')
+    return this.http.get<any>('https://eliteprospects-89f23-default-rtdb.firebaseio.com/Tyler-Howcroft.json')
   }
   showUserInfo(){
     this.getPlayerInfo().subscribe(data =>{
       console.log(data)
       this.playerInfo = data;
+      let yearSection = data["Year"];
+      let yearArr = [];
+      for(let key in yearSection) {
+        let yearObj = yearSection[key];
+        yearArr.push(yearObj);
+        let teamArr = [];
+        let teamSection = yearObj["Team"];
+        for(let key2 in teamSection) {
+          let teamObj = teamSection[key];
+          teamArr.push(teamObj);
+        }
+        yearObj!.Team = teamArr;
+      }
+      this.playerInfo!.Year = yearArr;
     })
   }
 

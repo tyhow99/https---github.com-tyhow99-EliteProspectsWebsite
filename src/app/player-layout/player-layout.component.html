@@ -179,9 +179,12 @@
                 <tr *ngIf="playerInfo != undefined">
                     <p>test</p>
                     <div *ngFor="let year of playerInfo.Year">
+                        <p>test2</p>
+                        <th>{{year.Period}}</th>
                         <div *ngFor="let facts of year.Team">
-                            <th>{{facts}}</th>
-                            <th>test</th>
+                            <th> {{facts.TeamName}}</th>
+                            <th>test6</th>
+                            <p>test</p>
                         </div>
                     </div>
                 </tr>
