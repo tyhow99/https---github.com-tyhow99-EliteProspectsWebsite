@@ -140,7 +140,7 @@
         <div class="change">
             <H1><P>Player Statistics</P></H1>
             <div class = "changeDrop1">
-                <select name = "seasonDropDown" id = "dropdown" style="height: 50px; width: 350px;">
+                <select name = "seasonDropDown" id = "dropdown" style="height: 50px; width: 350px; ">
                     <option value = "RegularAndPost">Regular Season + Post Season</option>
                     <option value = "Regular">Regular Season</option>
                     <option value = "Post">Post Season</option>
@@ -156,9 +156,9 @@
             </div>
         </div>
         <div class = "statsTable">
-            <table>
+            <table *ngIf="playerInfo != undefined">
                 <!-- The column titles-->
-                <tr>
+                <tr style="color:white; font-size: 20px;">
                     <th>S</th>
                     <th>Team</th>
                     <th>League</th>
@@ -170,25 +170,33 @@
                     <th>+/-</th>
                     <th>Post</th>
                     <th>GP</th>
+                    <th>G</th>
                     <th>A</th>
                     <th>TP</th>
                     <th>PIM</th>
                     <th>+/-</th>
                 </tr>
                  <!-- The column values-->
-                <tr *ngIf="playerInfo != undefined">
-                    <p>test</p>
-                    <div *ngFor="let year of playerInfo.Year">
-                        <p>test2</p>
-                        <th>{{year.Period}}</th>
-                        <div *ngFor="let facts of year.Team">
-                            <th> {{facts.TeamName}}</th>
-                            <th>test6</th>
-                            <p>test</p>
-                        </div>
-                    </div>
+                <tr *ngFor="let year of playerInfo.Year" style = "background-color: white;">
+                            <th>{{year.Period}}</th>
+                            <th>{{year.TeamName}}</th>
+                            <th>{{year.League}}</th>
+                            <th>{{year.GamesPlayed}}</th>
+                            <th>{{year.Goals}}</th>
+                            <th>{{year.Assists}}</th>
+                            <th>{{year.TotalPoints}}</th>
+                            <th>{{year.Penalties}}</th>
+                            <th>{{year.PlusMinus}}</th> 
+                            <th>{{year.Playoffs}}</th>
+                            <th>{{year.PlayoffGamesPlayed}}</th>
+                            <th>{{year.PlayoffGoals}}</th>
+                            <th>{{year.PlayoffAssists}}</th>
+                            <th>{{year.PlayoffTotalPoints}}</th>
+                            <th>{{year.PlayoffPenalties}}</th>
+                            <th>{{year.PlayoffPlusMinus}}</th>  
                 </tr>
             </table>
         </div>
     </div>
 </body>
+

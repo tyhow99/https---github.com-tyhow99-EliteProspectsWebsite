@@ -1,6 +1,3 @@
-export interface Team 
-{
+export interface Team {
     TeamName:string;
-    GamesPlayed:string;
-    League:string;
 }

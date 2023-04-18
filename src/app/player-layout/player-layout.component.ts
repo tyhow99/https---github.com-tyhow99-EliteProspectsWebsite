@@ -33,13 +33,6 @@ export class PlayerLayoutComponent implements OnInit
       for(let key in yearSection) {
         let yearObj = yearSection[key];
         yearArr.push(yearObj);
-        let teamArr = [];
-        let teamSection = yearObj["Team"];
-        for(let key2 in teamSection) {
-          let teamObj = teamSection[key];
-          teamArr.push(teamObj);
-        }
-        yearObj!.Team = teamArr;
       }
       this.playerInfo!.Year = yearArr;
     })

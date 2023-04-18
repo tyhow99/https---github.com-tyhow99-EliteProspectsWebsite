@@ -201,9 +201,11 @@
     top:90px;
     left: 3px;
     background-color: red;
-    width: fit-content;
-    color: white;
+    width: 800px;
+    color: blue;
     text-align: left;
+    font-size: 10px;
+    text-align: center;
   }
   .statsTable table th{
     width: 49px;
@@ -211,11 +213,27 @@
   }
   .change{
     position: relative;
-    top:0px;
+    top:-40px;
     left: 3px;
     background-color: #05364c;
     height: 60px;
     width: 798px;
+    color: white;
+  }
+  .playerTeams table th .perGameAverage{
+    color: white;
+    background-color: #9db2bb;
+    border-radius: 8px;
+  }
+  .playerTeams table th .default{
+    color: white;
+    background-color: #9db2bb;
+    border-radius: 8px;
+  }
+  .playerTeams table th .coachesPlayedFor{
+    color: white;
+    background-color: #9db2bb;
+    border-radius: 8px;
   }
   .change .changeDrop1{
     position: relative;
