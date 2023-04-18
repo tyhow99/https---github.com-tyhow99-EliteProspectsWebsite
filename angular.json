@@ -91,6 +91,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "EliteProspectsWebsite:build:production",
+            "firebaseProject": "eliteprospects-89f23",
+            "firebaseHostingSite": "eliteprospects-89f23"
+          }
         }
       }
     }

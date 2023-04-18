@@ -36,6 +36,9 @@ import { BasicTableComponent } from './basic-table/basic-table.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlayerLayoutComponent } from './player-layout/player-layout.component';
 import { TeamLayoutComponent } from './team-layout/team-layout.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
 @NgModule({
   declarations: [
     AppComponent,
@@ -76,6 +79,8 @@ import { TeamLayoutComponent } from './team-layout/team-layout.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
   ],
   providers: [],
   bootstrap: [AppComponent]

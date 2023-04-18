@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "eliteprospects-89f23"
+  },
+  "targets": {
+    "eliteprospects-89f23": {
+      "hosting": {
+        "EliteProspectsWebsite": [
+          "eliteprospects-89f23"
+        ]
+      }
+    }
   }
 }
