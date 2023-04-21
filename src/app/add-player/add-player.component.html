@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form #postForm = "ngForm" (ngSubmit)="addPlayer(postForm.value)">
+                <div class="input-group">
+                    <span class = "input-group-text">Position</span>
+                    <input type="text" class="form-control" ngModel name = "Position">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Age</span>
+                    <input type="text" class="form-control" ngModel name = "Age">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">DOB</span>
+                    <input type="text" class="form-control" ngModel name = "DOB">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">POB</span>
+                    <input type="text" class="form-control" ngModel name = "POB">
+                </div>
+                <button class = "btn btn-grey" type = "submit">
+                    Add Info
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<p>tests</p>
