@@ -42,6 +42,7 @@ import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { AddPlayerComponent } from './add-player/add-player.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
+import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,7 +78,8 @@ import { AngularFireModule } from '@angular/fire/compat';
     FooterComponent,
     PlayerLayoutComponent,
     TeamLayoutComponent,
-    AddPlayerComponent
+    AddPlayerComponent,
+    AddPlayerTwoComponent
   ],
   imports: [
     BrowserModule,

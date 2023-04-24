@@ -25,9 +25,10 @@ import { TesterComponent } from './tester/tester.component';
 import { PlayerLayoutComponent } from './player-layout/player-layout.component';
 import { TeamLayoutComponent } from './team-layout/team-layout.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
+import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component';
 export const routes: Routes = [
   {
-    path:'Admin', component: AddPlayerComponent
+    path:'Admin', component: AddPlayerTwoComponent
   },
   {
     path: '',
