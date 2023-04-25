@@ -31,7 +31,6 @@ import { TeamSideBarComponent } from './team-side-bar/team-side-bar.component';
 import { TesterComponent } from './tester/tester.component';
 import { LeagueTeamsComponent } from './league-teams/league-teams.component';
 import {HttpClientModule} from '@angular/common/http';
-import { UserInfoComponent } from './httpTest';
 import { BasicTableComponent } from './basic-table/basic-table.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlayerLayoutComponent } from './player-layout/player-layout.component';
@@ -39,11 +38,12 @@ import { TeamLayoutComponent } from './team-layout/team-layout.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { AddPlayerComponent } from './add-player/add-player.component';
+//import { AddPlayerComponent } from './add-player/add-player.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component';
-import { PittsburghPenguinsComponent } from './pittsburgh-penguins/pittsburgh-penguins.component';
+import { AddPlayerComponent } from './add-player/add-player.component';
+import { AddPlayerService } from './add-player-two/add-player-service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -74,14 +74,13 @@ import { PittsburghPenguinsComponent } from './pittsburgh-penguins/pittsburgh-pe
     TeamSideBarComponent,
     TesterComponent,
     LeagueTeamsComponent,
-    UserInfoComponent,
     BasicTableComponent,
     FooterComponent,
     PlayerLayoutComponent,
     TeamLayoutComponent,
     AddPlayerComponent,
-    AddPlayerTwoComponent,
-    PittsburghPenguinsComponent
+    AddPlayerTwoComponent
+    //\AddPlayerComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +91,9 @@ import { PittsburghPenguinsComponent } from './pittsburgh-penguins/pittsburgh-pe
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
   ],
-  providers: [],
+  providers: [
+    AddPlayerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
