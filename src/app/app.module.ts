@@ -44,6 +44,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
 import { AddPlayerService } from './add-player-two/add-player-service';
+import { AuthComponent } from './auth/auth.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,8 +80,8 @@ import { AddPlayerService } from './add-player-two/add-player-service';
     PlayerLayoutComponent,
     TeamLayoutComponent,
     AddPlayerComponent,
-    AddPlayerTwoComponent
-    //\AddPlayerComponent
+    AddPlayerTwoComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,

@@ -27,7 +27,11 @@ import { TeamLayoutComponent } from './team-layout/team-layout.component';
 import { AddPlayerComponent } from './add-player/add-player.component';
 import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component';
 import { PittsburghPenguinsComponent } from './pittsburgh-penguins/pittsburgh-penguins.component';
+import { AuthComponent } from './auth/auth.component';
 export const routes: Routes = [
+  {
+    path: 'auth', component: AuthComponent
+  },
   {
     path: 'Penguins', component: PittsburghPenguinsComponent
   },

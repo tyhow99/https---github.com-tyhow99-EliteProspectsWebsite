@@ -1,0 +1,23 @@
+Authentication
+<div class="row">
+    <div class="col-12">
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+            <div class = "input-group mb-3">
+                <span class="input-text-group" id="basic-model">Email</span>
+                <input type="text" class="form-control" placeholder="email"
+                aria-describedby="basic-addon1" ngModel name="email" required email>
+            </div>
+            <div class = "input-group mb-3">
+                <span class="input-text-group" id="basic-model">Password</span>
+                <input type="password" class="form-control" placeholder="password"
+                aria-describedby="basic-addon1" ngModel name="password" required password>
+            </div>
+            <button class ="btn-grey" type="submit" [disabled]="!authForm.valid">
+                Log In
+            </button>
+            <button class ="btn-grey" type="submit" [disabled]="!authForm.valid">
+                Signup
+            </button>
+        </form>
+    </div>
+</div>
