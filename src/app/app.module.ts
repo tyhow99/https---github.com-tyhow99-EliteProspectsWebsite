@@ -43,6 +43,7 @@ import { AddPlayerComponent } from './add-player/add-player.component';
 import { FormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component';
+import { PittsburghPenguinsComponent } from './pittsburgh-penguins/pittsburgh-penguins.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -79,7 +80,8 @@ import { AddPlayerTwoComponent } from './add-player-two/add-player-two.component
     PlayerLayoutComponent,
     TeamLayoutComponent,
     AddPlayerComponent,
-    AddPlayerTwoComponent
+    AddPlayerTwoComponent,
+    PittsburghPenguinsComponent
   ],
   imports: [
     BrowserModule,

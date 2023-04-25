@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 import { AngularFireDatabase } from '@angular/fire/compat/database';
 import { AddPlayerService } from './add-player-service';
+import { TeamPlayerModel } from './TeamPlayerModel';
 @Component({
   selector: 'app-add-player-two',
   templateUrl: './add-player-two.component.html',
@@ -24,5 +25,8 @@ export class AddPlayerTwoComponent implements OnInit{
     console.log(player);
     this.ps.addPlayer(player);
   }
-
+  addPenguinsDefenseman(player: TeamPlayerModel)
+  {
+    this.ps.addPlayer(player);
+  }
 }

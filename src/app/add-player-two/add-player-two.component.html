@@ -1,10 +1,46 @@
 <div class="container">
     <div class="row">
         <div class="col-8">
-            <form #postform = "ngForm" (ngSubmit)="addPlayer(postform.value)">
+            <form #postform = "ngForm" (ngSubmit)="addPenguinsDefenseman(postform.value)">
+                <div class="input-group">
+                    <span class = "input-group-text">Number</span>
+                    <input type="text" class="form-control" ngModel name = "Number">
+                </div>
                 <div class="input-group">
                     <span class = "input-group-text">Name</span>
                     <input type="text" class="form-control" ngModel name = "Name">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Age</span>
+                    <input type="text" class="form-control" ngModel name = "Age">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Year of Birth</span>
+                    <input type="text" class="form-control" ngModel name = "YOB">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Place of Birth</span>
+                    <input type="text" class="form-control" ngModel name = "POB">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Height</span>
+                    <input type="text" class="form-control" ngModel name = "Height">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Weight</span>
+                    <input type="text" class="form-control" ngModel name = "Weight">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Handiness</span>
+                    <input type="text" class="form-control" ngModel name = "Handiness">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Contract</span>
+                    <input type="text" class="form-control" ngModel name = "Contract">
+                </div>
+                <div class="input-group">
+                    <span class = "input-group-text">Cap Hit</span>
+                    <input type="text" class="form-control" ngModel name = "CapHit">
                 </div>
                 <button class = "btn btn-grey" type = "submit">
                     Add Info

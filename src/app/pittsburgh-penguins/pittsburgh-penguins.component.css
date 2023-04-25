@@ -1,0 +1,20 @@
+.teamLayout .teamLayoutTop{
+    background-color: red;
+    color: white;
+    width: 800px;
+}
+.teamLayout th{
+    width: 72.5px;   
+}
+.teamLayout tr{
+    border: 1px solid black;
+}
+.teamLayout H1{
+    background-color: blue;
+    margin: 0px;
+    Height:30px;
+    color: white;
+}
+.goalies{
+    width: fit-content;
+}
