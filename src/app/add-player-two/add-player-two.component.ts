@@ -11,7 +11,7 @@ import { TeamPlayerModel } from './TeamPlayerModel';
   styleUrls: ['./add-player-two.component.css']
 })
 export class AddPlayerTwoComponent implements OnInit{
-  playerInfo: TransferPlayersModel | undefined;
+  playerInfo: TeamPlayerModel | undefined;
   constructor(private  ps: AddPlayerService){
 
   }
@@ -20,7 +20,7 @@ export class AddPlayerTwoComponent implements OnInit{
   getPlayerInfo(){
      
   }
-  addPlayer(player:TransferPlayersModel){
+  addPlayer(player:TeamPlayerModel){
     console.log("You clicked add player");
     console.log(player);
     this.ps.addPlayer(player);
