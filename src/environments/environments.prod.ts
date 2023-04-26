@@ -1,14 +1,14 @@
 export const environment = {
-  firebase: {
-    projectId: 'eliteprospects-89f23',
-    appId: '1:637574595341:web:17f355f7f11dab9e0be644',
-    databaseURL: 'https://eliteprospects-89f23-default-rtdb.firebaseio.com',
-    storageBucket: 'eliteprospects-89f23.appspot.com',
-    apiKey: 'AIzaSyD_d0ZSjxP83eqP4R3bQLe82ZtVcAhw9aY',
-    authDomain: 'eliteprospects-89f23.firebaseapp.com',
-    messagingSenderId: '637574595341',
-    measurementId: 'G-JJRN4YF7N7',
-  },  
+  // firebase: {
+  //   projectId: 'eliteprospects-89f23',
+  //   appId: '1:637574595341:web:17f355f7f11dab9e0be644',
+  //   databaseURL: 'https://eliteprospects-89f23-default-rtdb.firebaseio.com',
+  //   storageBucket: 'eliteprospects-89f23.appspot.com',
+  //   apiKey: 'AIzaSyD_d0ZSjxP83eqP4R3bQLe82ZtVcAhw9aY',
+  //   authDomain: 'eliteprospects-89f23.firebaseapp.com',
+  //   messagingSenderId: '637574595341',
+  //   measurementId: 'G-JJRN4YF7N7',
+  // },  
   production: true
     
 }
