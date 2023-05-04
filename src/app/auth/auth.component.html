@@ -12,10 +12,10 @@ Authentication
                 <input type="password" class="form-control" placeholder="password"
                 aria-describedby="basic-addon1" ngModel name="password" required password>
             </div>
-            <button class ="btn-grey" type="submit" [disabled]="!authForm.valid">
+            <button class ="btn-grey" type="submit" [disabled]="!authForm.valid" (click)="buttonClicked='Login'">
                 Log In
             </button>
-            <button class ="btn-grey" type="submit" [disabled]="!authForm.valid">
+            <button class ="btn-grey" type="submit" [disabled]="!authForm.valid" (click)="buttonClicked='SignUp'">
                 Signup
             </button>
         </form>
